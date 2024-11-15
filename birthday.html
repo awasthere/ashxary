@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="birthday.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Geist:wght@100..900&family=Honk&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <section class="banner">
+    <header>
+        <h1 class="cormorant-garamond-regular"><a href="#" class="logo">Aryan<span>X</span>Aashi</a></h1>
+        <div class="menu-icon" id="menu-icon">
+            <ion-icon size="large" name="menu-outline"></ion-icon>
+        </div>
+        <ul id="nav-links">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="explore.html">Explore</a></li>
+            <li><a class="nav-link" href="apology.html">Apology</a></li>
+        </ul>
+    </header>
+  </section>
+  <main>
+  <div class="container">
+    <div class="message-box" id="messageBox">
+      <h1 id="greeting">Happy Birthday, Aashi  ❤️</h1>
+      <p>Today is a special day just for you!</p>
+      <button id="revealButton" onclick="revealSurprise()">Reveal Your Surprise</button>
+    </div>
+
+    <div class="surprise-message hidden" id="surpriseMessage">
+      <h2>🎉 Surprise! 🎉</h2>
+      <p>You bring so much happiness to everyone around you. Here's to an amazing year filled with joy, laughter, and love. You deserve all the wonderful things that life has to offer. Happy Birthday!</p>
+      <p class="closing">With love and blessings, from Aryan  ❤️</p>
+    </div>
+  </div>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>

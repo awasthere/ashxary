@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+   
+    height: 100%;
+    
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    overflow: hidden;
+  }
+  .cormorant-garamond-regular{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+header ul li{
+    display: inline-block;
+    
+}
+header ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    
+}
+header .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+.logo span{
+    background:linear-gradient(to top,rgb(204, 11, 11),rgb(218, 15, 218) ,rgb(255, 0, 200));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+  .container {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .message-box, .surprise-message {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff85c2;
+  }
+  
+  .surprise-message h2 {
+    color: #ff69b4;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .surprise-message p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .closing {
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .message-box, .surprise-message {
+      padding: 20px;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  
+    .surprise-message h2 {
+      font-size: 24px;
+    }
+  
+    .surprise-message p {
+      font-size: 16px;
+    }
+  
+    .closing {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .message-box, .surprise-message {
+      padding: 15px;
+    }
+  
+    button {
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+  
+    .surprise-message h2 {
+      font-size: 22px;
+    }
+  
+    .surprise-message p {
+      font-size: 15px;
+    }
+  
+    .closing {
+      font-size: 13px;
+    }
+  }  
