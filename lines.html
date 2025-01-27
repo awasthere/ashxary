@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Best Friend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+            max-width: 90%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            font-size: 3rem;
+            color: #ff6f61;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        button {
+            background: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #d45a50;
+        }
+
+        .floating-hearts {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #ff6f61;
+            border-radius: 50%;
+            animation: floatHearts 5s linear infinite;
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(100vh) scale(1);
+            }
+            100% {
+                transform: translateY(-100vh) scale(0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To My Best Friend ❤️</h1>
+        <p>
+            Dekhhh tu aashii meri parammitraaaa to tuuu hi hai aur humesa rhne wali hai baat ho ya na ho....wada kia hu to nibhaunga bhi...kyuki mera karma mere hi account me jurega na ki tere, bittu ya kisi or ke....aur jooooo ki mera pdhayiii ab ekdm track pe haiii maii to or positive hu ab sab kch ko lekrr to I'm backkkkkkkkk again to disturb youuuuuu from 10th feb....bakkiii tu is baar krlegii yrrr exam ki tension mt lenaa wiswas rkhnaa bkki see you....aur haa sun deffer unblock krr ab...ab mera fir se focus sudhr gyaa haiii and You can't imagine how positive and happy I'm feeling right now after finding myself again after 3-4 months....aisa lg rha hai ki bhgwan fir se mere andar new will power aake bhr die ho...bakki kch panktiyaa mai yha likh rha hu kyuki tune block kia thaa yaani merii kch baat tujhe bht jdaaa hurt ki ahi unhi chizo ke lie aur abhi tak teri trf se jitni efforts rhi unke lie....
+
+yu to ni milte teri Jaisi nadaan bholi bhali dost kisiko, is chalak bhari dunia me kia hogaa maine kch apne acche karam kisi janam ka jiska ho tum mitha sa parinam...mujhee hr baar meri saari gltiyo pe kr deti ho tum maaf mujhe kaise? lgta hai ki kch to hai naata humara kisi janam ka jo hr baar hum ek dusre ko dhundhlete hai wapas jaise...muujhe aaj bhi yd hai maine jab tumhara dil dukhaya tha pehli baar jab tumne pucha kya kru mai mar jau to maine mjk me boldia haa mar jauu...kaisee bhalaa jis pyarii sii dost se baat kie bina me na reh paata ek bhi din bhala kaise use kehdu janne ko mar ek din...maine to hai sochliaa ki hai ni jane dena tujhe khiii jor ke rkhna hai yu tujhe umar bhar...chahe galti ho meri ya tumhari firr bhi maafi mai maang lunga khusii khusi is dosti ke khatir...kaise bhul jauuu un dino ko jab hoti thi humari baad baadiii pyariii, na ghbrati thi tum lena mera pakch ek bhi baari...tum to humesa rhogiii merii phoolll siii dost pyari aur nyariii....
+        </p>
+        <div class="heart">💕</div>
+        <button onclick="sendLove()">Send Love 💌</button>
+    </div>
+
+    <script>
+        function sendLove() {
+            alert('To my best friend: You are loved more than words can say! ❤️');
+        }
+
+        // Generate floating hearts
+        for (let i = 0; i < 30; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'floating-hearts';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDelay = Math.random() * 3 + 's';
+            document.body.appendChild(heart);
+        }
+    </script>
+</body>
+</html>
