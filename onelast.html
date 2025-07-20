@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Sorry</title>
+  <link rel="stylesheet" href="onelast.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Hey Rashmeet!</h1>
+    <p>I’ve written something for you...</p>
+    <button onclick="checkPassword()">Read My Apology</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = prompt("Enter the secret password to continue:");
+      if (password === "2827") {
+        window.location.href = "apology.html";
+      } else {
+        alert("Oops! Wrong password. Try again.");
+      }
+    }
+  </script>
+</body>
+</html>

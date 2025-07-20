@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best of Luck!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+            animation: confettiFall 4s linear infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-100vh) translateX(0);
+            }
+            100% {
+                transform: translateY(100vh) translateX(calc(-50vw + 50%));
+            }
+        }
+
+        button {
+            background: #fff;
+            color: #6a11cb;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #2575fc;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hope your exam went awesome and let's pray together!!! 🌟</h1>
+        <p>First of all sit calmly, take a deep breath and relax. Finally your exam is over and I hope ki tumne acche se paper dia hoga aur jo pdhke gyi whi aaya bhi hoga. Now pray for good. Positive rhoo ekdm result ke baad tak sab accha hoga!!!
+            Dekho before exploring below buttons I want to say I don't want anything from you nothing kch bhi nhi...but I want to give you everything. let me do what I want to do for you tumhe gussa aata I'm ready to persuade you everytime. mujhe accha lgta hai tmhe appreciate krna mujhe accha lgta hai tmhari tareef krna mujhe accha lgta hai tmhe lekr flex krna mujhe accha lgta hai tmhara care krna mujhe accha lgta hai tumhe guide krna mujhe accha lgta hai tmhe career ko leke motivate krna mujhe accha lgta hai tmhe roast krna, so let me do those thing eensb ke badle mujhe tumse kch ni chaiye bss let me do and don't break this bond aur agar tmhe krna bhi hai to unblock krke kro takki you be in contact always that's it. ab jake sach jaanlo 14th jan ka...
+        </p>
+        <a href="finalshowdown.html"><button>wanna know truth? 💌</button></a>
+        <a href="vid.html"><button>For videos (recommended after exploring the truth) 💌</button></a>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert('All the best! You’re going to do amazing! 🌟');
+        }
+
+        // Generate confetti
+        for (let i = 0; i < 50; i++) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.animationDelay = Math.random() * 2 + 's';
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            document.body.appendChild(confetti);
+        }
+    </script>
+</body>
+</html>
